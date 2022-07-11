@@ -25,8 +25,5 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 # Define working directory. ??????????
 WORKDIR /data
 
-# Define commonly used JAVA_HOME variable #***** since all 3 have jdk pre-installed, we will not need this step 
-ENV JAVA_HOME /usr/lib/jvm/default-jvm/
-
 # Define default command.
 CMD ["mvn", "--version"]
