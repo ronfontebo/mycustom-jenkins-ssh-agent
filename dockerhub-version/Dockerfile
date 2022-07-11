@@ -7,8 +7,8 @@ ARG USER_HOME_DIR="/root"
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
 # Java (jdk) is pre-installed so we only need to install Git
-RUN apt update \
- && apt install git
+RUN apt-get update \
+ && apt-get install -y git
 
 # Install Maven.
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
